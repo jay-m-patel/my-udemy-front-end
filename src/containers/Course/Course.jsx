@@ -54,7 +54,7 @@ class Course extends Component {
                             ?
                             _get(this.state, 'selectedCourse.contentUrls', []).map(url => (
                                 <Grid key={_random(10000)}>
-                                    <video width="350px" controls>
+                                    <video width="350px" controls controlsList="nodownload">
                                         <source src={`${url}`} />
                                     </video>
                                 </Grid>
